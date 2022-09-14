@@ -1,0 +1,17 @@
+.member-card {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &:nth-child(9) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

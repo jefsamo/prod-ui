@@ -1,0 +1,151 @@
+.haven {
+  font-family: "DM Sans", sans-serif;
+  .haven-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 0;
+
+    .haven-story {
+      margin-top: 60px;
+      h1 {
+        font-family: "Akira Expanded";
+        font-style: normal;
+        font-weight: 800;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 10px 0;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        color: #00a551;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.25rem;
+      }
+
+      .medium {
+        margin: 30px 0;
+        a {
+          text-decoration: none;
+          padding: 10px 12px;
+          border: 1px solid #23272a;
+          color: #23272a;
+          border-radius: 20px;
+          transition: all 0.3s ease 0s;
+          &:hover {
+            color: #fff;
+            background: #23272a;
+          }
+        }
+      }
+    }
+
+    .haven-image {
+      width: 80%;
+      margin: auto;
+      img {
+        display: block;
+        width: 100%;
+        height: 90%;
+      }
+
+      .bottom-text {
+        text-align: right;
+        p {
+          color: #23272a;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+
+  .society {
+    h1 {
+      margin: 20px 0;
+    }
+    .profile-card {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      row-gap: 50px;
+    }
+  }
+
+  .rise {
+    margin-top: 50px;
+    .rise-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      min-height: 500px;
+      text-align: center;
+
+      .levitate {
+        img {
+          min-height: 700px;
+        }
+      }
+
+      .right-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 200px;
+        align-items: center;
+        a {
+          text-decoration: none;
+          border: 1px solid #23272a;
+          color: #f9f9f9;
+          border-radius: 20px;
+          padding: 8px 32px;
+          display: block;
+          background: #080909;
+          margin: 20px 0;
+          transition: all 0.3s ease 0s;
+
+          &:hover {
+            color: #23272a;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 50px;
+
+    .rise-with-us,
+    .coolshit {
+      flex: 2;
+    }
+    .copyright {
+      flex: 1;
+      align-self: center;
+    }
+
+    .rise-with-us {
+      h1,
+      p {
+        margin: 10px 0;
+      }
+      .quick-links {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+    .coolshit {
+      text-align: center;
+      padding: 50px 0;
+    }
+  }
+}

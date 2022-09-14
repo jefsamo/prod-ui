@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  margin-top: 50px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #23272a;
+
+  .rise-with-us,
+  .coolshit {
+    flex: 2;
+  }
+  .copyright {
+    flex: 1;
+    align-self: center;
+  }
+
+  .rise-with-us {
+    h1,
+    p {
+      margin: 10px 0;
+    }
+    .quick-links {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  .coolshit {
+    text-align: center;
+    padding: 50px 0;
+  }
+}

@@ -1,0 +1,88 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+
+  .home-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 500px;
+
+    .heading {
+      margin-left: 150px;
+      h1 {
+        text-align: center;
+        color: #00a551;
+        font-size: 4rem;
+        font-weight: 800;
+        font-family: "Akira Expanded";
+        font-style: normal;
+        font-weight: 800;
+      }
+    }
+    .image-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+
+      .gif {
+        display: none;
+      }
+
+      &:hover {
+        .gif {
+          display: block;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        img {
+          display: none;
+        }
+      }
+
+      p {
+        padding: 10px 0;
+        align-self: flex-start;
+      }
+      a {
+        text-decoration: none;
+        border: 1px solid #23272a;
+        width: 100%;
+        text-align: center;
+        border-radius: 20px;
+        padding: 5px 10px;
+        color: #23272a;
+        transition: all 0.7s ease 0s;
+        &:hover {
+          cursor: pointer;
+          color: #fff;
+          background: #23272a;
+        }
+      }
+    }
+  }
+
+  .bottom-content {
+    position: absolute;
+    bottom: 0;
+    width: 90vw;
+    img {
+      height: 30%;
+    }
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+  }
+}

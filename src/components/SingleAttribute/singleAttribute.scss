@@ -1,0 +1,21 @@
+.detail-content {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+
+  h2,
+  .rank,
+  .percent {
+    color: #00a551;
+  }
+
+  h2 {
+    font-weight: bolder;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

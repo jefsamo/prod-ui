@@ -1,0 +1,62 @@
+.wallet-checker {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  .main-content {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 80vh;
+
+    .left-content {
+      padding: 50px 0;
+      h1 {
+        font-family: "Akira Expanded";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 20px 0;
+      }
+      p {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #23272a;
+        margin: 20px 0;
+      }
+
+      .input {
+        width: 80%;
+        input {
+          width: 70%;
+          border: 1px solid #cccaca;
+          padding: 10px 10px;
+          outline: none;
+        }
+        button {
+          padding: 10px 24px;
+          background: #00a551;
+          border-radius: 0px 5px 5px 0px;
+          cursor: pointer;
+          border: none;
+          color: #e7e7e7;
+        }
+      }
+    }
+
+    .right-content {
+      position: relative;
+      height: 100vh;
+      img {
+        position: absolute;
+        height: 90vh;
+        right: 0;
+        bottom: 50px;
+      }
+    }
+  }
+}

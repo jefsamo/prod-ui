@@ -1,0 +1,42 @@
+.attributes {
+  .select {
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    select {
+      padding: 8px 24px;
+      border-radius: 5px;
+    }
+  }
+
+  .attribute-detail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    row-gap: 50px;
+    margin: 50px 0;
+
+    .detail-content {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+
+      h2,
+      .rank,
+      .percent {
+        color: #00a551;
+      }
+
+      h2 {
+        font-weight: bolder;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
