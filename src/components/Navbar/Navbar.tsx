@@ -1,12 +1,17 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Link } from "react-router-dom";
 import { NavbarType } from "../../utils";
 import Logo from "./svg/logo2.png";
+import Union from "./svg/Union.png";
+import Times from "./svg/Vector.png";
 import Discord from "./svg/rptrd_discord.svg";
 import Twitter from "./svg/twitter_dark.svg";
 import "./navbar.scss";
 
 const Navbar: FC<NavbarType> = ({ active }) => {
+  const [click, setClick] = useState(true);
+  const handleClick = () => setClick(!click);
+  const Close = () => setClick(false);
   return (
     <div className="navbar">
       <Link to="/">
@@ -51,6 +56,13 @@ const Navbar: FC<NavbarType> = ({ active }) => {
           </li>
         </ul>
       </nav>
+      <div className="nav-menu">
+        {click ? (
+          <img src={Union} alt="" onClick={() => setClick(!click)} />
+        ) : (
+          <img src={Times} alt="" onClick={() => setClick(!click)} />
+        )}
+      </div>
     </div>
   );
 };

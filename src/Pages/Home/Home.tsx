@@ -32,6 +32,25 @@ const Home = () => {
             <p>Rapture is coming</p>
           </div>
         </div>
+
+        <div className="home-mobile">
+          <div className="rapture-text">
+            <a href="https://rptrdsolsnft.medium.com">
+              F*ck around and find out
+            </a>
+            <div className="copy">
+              <p>{new Date().getFullYear()}, RPTRD Sols</p>
+              <p>Rapture is coming</p>
+            </div>
+          </div>
+          <div className="image">
+            <img
+              src={Balaclava}
+              alt=""
+              // style={{ width: "100px", height: "100px" }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -94,3 +94,14 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .whitelist-container {
+    .center-items {
+      width: 100%;
+      // .inner-items {
+      //   width: 100%;
+      // }
+    }
+  }
+}

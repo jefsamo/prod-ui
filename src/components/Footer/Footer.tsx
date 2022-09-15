@@ -26,8 +26,10 @@ const Footer = () => {
         <p>Rapture is coming</p>
       </div>
       <div className="coolshit">
-        We’re Building a project that needs its community, we need you, we
-        fucked around and found out, its your turn to fuck with us.
+        <p>
+          We’re Building a project that needs its community, we need you, we
+          fucked around and found out, its your turn to fuck with us.
+        </p>
       </div>
     </footer>
   );

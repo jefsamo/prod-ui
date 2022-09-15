@@ -1,8 +1,9 @@
 import Navbar from "../../components/Navbar/Navbar";
-import Avatar from "./svg/avatar.png";
+import Avatar2 from "./svg/avatar.png";
 import "./styleYourself.scss";
 import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
+import Avatar from "../../components/Avatar/Avatar";
 
 const StyleYourself = () => {
   const [state, setState] = useState({
@@ -21,7 +22,7 @@ const StyleYourself = () => {
           <div className="left-content">
             <div className="image-container">
               <div className="content">
-                <img src={Avatar} alt="" />
+                <img src={Avatar2} alt="" />
               </div>
             </div>
           </div>
@@ -98,27 +99,16 @@ const StyleYourself = () => {
                 Accessories
               </div>
             </div>
-            <div
-              className="avatar-details"
-              onClick={() =>
-                setState({
-                  headwear: false,
-                  pants: false,
-                  shirts: true,
-                  kicks: false,
-                  accessories: false,
-                })
-              }
-            >
-              {state.headwear && <p>Headwear</p>}
-            </div>
             <div className="avatar-details">
-              {state.shirts && <p>Shirts</p>}
-            </div>
-            <div className="avatar-details">{state.pants && <p>Pants</p>}</div>
-            <div className="avatar-details">{state.kicks && <p>Kicks</p>}</div>
-            <div className="avatar-details">
-              {state.accessories && <p>Accessories</p>}
+              {state.headwear && <Avatar type="headwear" />}
+
+              {state.shirts && <Avatar type="shirts" />}
+
+              {state.pants && <Avatar type="pants" />}
+
+              {state.kicks && <Avatar type="kicks" />}
+
+              {state.accessories && <Avatar type="accessories" />}
             </div>
           </div>
         </div>

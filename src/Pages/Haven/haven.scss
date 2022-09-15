@@ -149,3 +149,73 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .haven {
+    .haven-section {
+      grid-template-columns: 1fr;
+
+      .haven-story {
+        width: 80%;
+        margin-top: -20px;
+        p {
+          font-size: 0.75rem;
+        }
+        h1,
+        h2 {
+          font-size: 1rem;
+        }
+
+        .medium {
+          a {
+            font-size: 0.75rem;
+          }
+        }
+      }
+
+      .haven-image {
+        display: none;
+      }
+    }
+
+    .society {
+      h1 {
+        font-size: 1.25rem;
+        margin: -20px 0 20px;
+      }
+      .profile-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        row-gap: 50px;
+      }
+    }
+
+    .rise {
+      .rise-content {
+        grid-template-columns: 1fr;
+
+        .levitate {
+          img {
+            width: 309px;
+            min-height: 441px;
+          }
+        }
+
+        .right-content {
+          padding-top: 20px;
+          align-items: flex-start;
+          h1 {
+            font-size: 1rem;
+          }
+          p {
+            text-align: left;
+            font-size: 0.75rem;
+          }
+          a {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}

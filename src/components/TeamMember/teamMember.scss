@@ -4,6 +4,19 @@
     height: auto;
   }
 
+  .info {
+    .member-details {
+      h3 {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+      }
+      p {
+        color: #5d5d5d;
+        font-weight: 400;
+      }
+    }
+  }
+
   &:nth-child(9) {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -14,4 +27,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .member-card {
+    &:nth-child(9) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .info {
+      .member-details {
+        h3 {
+          font-size: 0.75rem;
+        }
+        p {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
 }

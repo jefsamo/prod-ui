@@ -46,5 +46,31 @@
         color: #23272a;
       }
     }
+    .right-content {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .soul-map {
+    .soulmap-content {
+      margin: 0px 0 0 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+
+      .left-content {
+        margin-bottom: -70px;
+        p {
+          color: #b8b8b8;
+        }
+        .rptrd {
+          display: none;
+        }
+      }
+    }
   }
 }

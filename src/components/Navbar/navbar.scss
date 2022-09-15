@@ -74,4 +74,25 @@
   img {
     display: block;
   }
+
+  .nav-menu {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    .nav-menu {
+      display: block;
+    }
+    nav {
+      display: none;
+    }
+
+    .logo {
+      width: 55px;
+      height: 55px;
+    }
+  }
 }
