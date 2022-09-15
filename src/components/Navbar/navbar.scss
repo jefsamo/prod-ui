@@ -86,13 +86,39 @@
     .nav-menu {
       display: block;
     }
-    nav {
-      display: none;
+    .nav-mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      height: 300px;
+      z-index: 10;
+      background-color: white;
+      top: 100px;
+      ul {
+        z-index: 1000;
+        .active,
+        .inactive {
+          border: none;
+        }
+
+        li {
+          list-style: none;
+          padding: 20px 0;
+          a {
+            text-decoration: none;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            border: none;
+          }
+        }
+      }
     }
 
-    .logo {
-      width: 55px;
-      height: 55px;
+    .nav {
+      display: none;
     }
   }
 }

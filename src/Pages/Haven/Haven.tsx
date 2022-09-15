@@ -2,9 +2,9 @@ import Navbar from "../../components/Navbar/Navbar";
 import Poster from "./svg/poster.png";
 import RL from "./svg/rptrd-reeb.png";
 import { data, TeamMemberType } from "../../utils";
-import "./haven.scss";
 import TeamMember from "../../components/TeamMember/TeamMember";
 import Footer from "../../components/Footer/Footer";
+import "./haven.scss";
 
 const Haven = () => {
   return (

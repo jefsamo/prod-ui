@@ -9,22 +9,20 @@ const Avatar = (typeAvatar: AvatarType) => {
     return (
       <>
         <div className="avatar-products">
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          {/* <div className="product">wale</div>
-          <div className="product">wale</div> */}
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
+          <div className="product">headwear</div>
         </div>
       </>
     );
@@ -33,22 +31,20 @@ const Avatar = (typeAvatar: AvatarType) => {
     return (
       <>
         <div className="avatar-products">
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          <div className="product">wale</div>
-          {/* <div className="product">wale</div>
-          <div className="product">wale</div> */}
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
+          <div className="product">shirts</div>
         </div>
       </>
     );
@@ -71,8 +67,6 @@ const Avatar = (typeAvatar: AvatarType) => {
           <div className="product">wale</div>
           <div className="product">wale</div>
           <div className="product">wale</div>
-          {/* <div className="product">wale</div>
-          <div className="product">wale</div> */}
         </div>
       </>
     );

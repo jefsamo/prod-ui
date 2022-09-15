@@ -1,9 +1,8 @@
-import Logo from "./svg/logo2.png";
 import { Link } from "react-router-dom";
 import Twitter from "./svg/twitter.png";
 import Discord from "./svg/discord.png";
-import "./applyForWL.scss";
 import Navbar from "../../components/Navbar/Navbar";
+import "./applyForWL.scss";
 
 const ApplyForWL = () => {
   return (
