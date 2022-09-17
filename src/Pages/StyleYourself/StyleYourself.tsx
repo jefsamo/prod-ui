@@ -1,9 +1,10 @@
 import Navbar from "../../components/Navbar/Navbar";
-import Avatar2 from "./svg/avatar.png";
+// import Avatar2 from "./svg/avatar.png";
 import "./styleYourself.scss";
 import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Avatar from "../../components/Avatar/Avatar";
+import { KicksData, Kick } from "../../utils";
 
 const StyleYourself = () => {
   const [state, setState] = useState({
@@ -14,6 +15,13 @@ const StyleYourself = () => {
     accessories: false,
   });
 
+  const [kicks] = useState<Kick[] | []>(KicksData);
+  const [kickIndex, setKickIndex] = useState(0);
+
+  const handleClick = (index: number) => {
+    setKickIndex(index);
+  };
+
   return (
     <div className="style-yourself">
       <div className="container">
@@ -22,7 +30,7 @@ const StyleYourself = () => {
           <div className="left-content">
             <div className="image-container">
               <div className="content">
-                <img src={Avatar2} alt="" />
+                <img src={kicks[kickIndex].image} alt="" />
               </div>
             </div>
           </div>
@@ -99,16 +107,29 @@ const StyleYourself = () => {
                 Accessories
               </div>
             </div>
+            <p>{kickIndex}</p>
             <div className="avatar-details">
-              {state.headwear && <Avatar type="headwear" />}
+              {/* {state.headwear && <Avatar type="headwear" />}
 
               {state.shirts && <Avatar type="shirts" />}
 
-              {state.pants && <Avatar type="pants" />}
+              {state.pants && <Avatar type="pants" />} */}
 
-              {state.kicks && <Avatar type="kicks" />}
+              {state.kicks &&
+                kicks.map((kick: Kick, i: number) => {
+                  return (
+                    <Avatar
+                      key={i}
+                      type="kicks"
+                      kick={kick}
+                      // setKickIndex={setKickIndex}
+                      onClick={() => handleClick(i)}
+                      // index={i}
+                    />
+                  );
+                })}
 
-              {state.accessories && <Avatar type="accessories" />}
+              {/* {state.accessories && <Avatar type="accessories" />} */}
             </div>
           </div>
         </div>

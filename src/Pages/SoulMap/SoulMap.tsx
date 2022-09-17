@@ -14,7 +14,11 @@ const SoulMap = () => {
               Work In progress, Currently drafting the bullshit utilities <br />
               like, Staking, Plain old merch, and some buzzwords
             </p>
-            <a href="https://rptrdsolsnft.medium.com" target="_blank">
+            <a
+              href="https://rptrdsolsnft.medium.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Our foremost plan
             </a>
             <p className="rptrd">

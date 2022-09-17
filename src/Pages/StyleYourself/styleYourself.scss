@@ -19,13 +19,12 @@
 
       div {
         padding: 8px 24px;
-        gap: 10px;
         background: #f1f1f1;
         border-radius: 5px;
         font-family: "DM Sans";
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        // font-size: 16px;
         color: #23272a;
         cursor: pointer;
         margin-left: 10px;
@@ -34,6 +33,13 @@
         background: #48f19b;
         color: #f9f9f9;
       }
+    }
+
+    .avatar-details {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 50px;
     }
   }
 }
@@ -60,8 +66,18 @@
 
     .right-content {
       .buttons {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+
+        div {
+          padding: 8px 12px;
+          gap: 5px;
+          margin-left: 0;
+          text-align: center;
+        }
+      }
+      .avatar-details {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

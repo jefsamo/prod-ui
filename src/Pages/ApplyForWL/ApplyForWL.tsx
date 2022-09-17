@@ -31,7 +31,7 @@ const ApplyForWL = () => {
           <div className="inner-footer">
             <p>Redefining the NFT space</p>
             <div className="quicklinks">
-              <a href="https://twitter.com/rapyur3dsols">
+              <a href="https://twitter.com/raptur3dsols">
                 <img src={Twitter} alt="" />
               </a>
               <a href="https://twitter.com/rapyur3dsols">

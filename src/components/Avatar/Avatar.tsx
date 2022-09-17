@@ -1,33 +1,39 @@
+import { Kick } from "../../utils";
 import "./avatar.scss";
 
 export type AvatarType = {
   type: string;
+  kicks?: Kick[];
+  kick: Kick;
+  setKickIndex?: React.Dispatch<React.SetStateAction<number>>;
+  onClick?: () => void;
+  index?: number;
 };
 
-const Avatar = (typeAvatar: AvatarType) => {
-  if (typeAvatar.type === "headwear") {
+const Avatar = ({
+  type,
+  kicks,
+  kick,
+  setKickIndex,
+  index,
+  onClick,
+}: AvatarType) => {
+  if (type === "headwear") {
     return (
       <>
         <div className="avatar-products">
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
-          <div className="product">headwear</div>
+          {kicks?.map((kick: Kick, i) => {
+            return (
+              <div className="product">
+                <img src={kick.image} alt="" />
+              </div>
+            );
+          })}
         </div>
       </>
     );
   }
-  if (typeAvatar.type === "shirts") {
+  if (type === "shirts") {
     return (
       <>
         <div className="avatar-products">
@@ -49,7 +55,7 @@ const Avatar = (typeAvatar: AvatarType) => {
       </>
     );
   }
-  if (typeAvatar.type === "pants") {
+  if (type === "pants") {
     return (
       <>
         <div className="avatar-products">
@@ -71,10 +77,18 @@ const Avatar = (typeAvatar: AvatarType) => {
       </>
     );
   }
-  if (typeAvatar.type === "kicks") {
-    return <>kicks</>;
+  if (type === "kicks") {
+    return (
+      <>
+        <div className="avatar-products">
+          <div className="product">
+            <img src={kick.image} alt="" onClick={onClick} />
+          </div>
+        </div>
+      </>
+    );
   }
-  if (typeAvatar.type === "accessories") {
+  if (type === "accessories") {
     return <>accessories</>;
   }
   return <></>;

@@ -23,9 +23,9 @@ const Navbar: FC<NavbarType> = ({ active }) => {
               <Link to="/">Home</Link>
             </li>
 
-            <li className={active === "souls" ? "active tab" : "clickable"}>
+            {/* <li className={active === "souls" ? "active tab" : "clickable"}>
               <Link to="/souls">Souls</Link>
-            </li>
+            </li> */}
             <li className={active === "haven" ? "active tab" : "clickable"}>
               <Link to="/haven">Haven</Link>
             </li>

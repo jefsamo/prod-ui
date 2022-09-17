@@ -35,7 +35,11 @@ const Home = () => {
 
         <div className="home-mobile">
           <div className="rapture-text">
-            <a href="https://rptrdsolsnft.medium.com">
+            <a
+              href="https://rptrdsolsnft.medium.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               F*ck around and find out
             </a>
             <div className="copy">

@@ -1,3 +1,5 @@
+import Kicks from "./svg/image.png";
+
 export type NavbarType = {
   active: string;
 };
@@ -8,6 +10,42 @@ export type TeamMemberType = {
   image: string;
 };
 
+export type Kick = {
+  image: string;
+};
+
+export const KicksData: Kick[] = [
+  {
+    image: Kicks,
+  },
+  {
+    image: Kicks,
+  },
+  {
+    image: Kicks,
+  },
+  {
+    image: Kicks,
+  },
+  {
+    image: Kicks,
+  },
+  {
+    image: Kicks,
+  },
+  {
+    image: Kicks,
+  },
+  {
+    image: Kicks,
+  },
+  {
+    image: Kicks,
+  },
+  {
+    image: Kicks,
+  },
+];
 export const data: TeamMemberType[] = [
   {
     name: "Maverick",
