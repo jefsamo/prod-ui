@@ -15,8 +15,10 @@ const Home = () => {
             <h1>SOLS</h1>
           </div>
           <div className="image-content">
-            <img src={Home_Img} alt="" />
-            <video src={Video} autoPlay muted loop className="gif" />
+            <div className="wrapper">
+              <img src={Home_Img} alt="" />
+              <video src={Video} autoPlay muted loop className="gif" />
+            </div>
             <p>
               We did it for the art. Want to <br /> learn more?
             </p>
