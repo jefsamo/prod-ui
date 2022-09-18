@@ -8,6 +8,7 @@ export type AvatarType = {
   setKickIndex?: React.Dispatch<React.SetStateAction<number>>;
   onClick?: () => void;
   index?: number;
+  kickIndex?: number;
 };
 
 const Avatar = ({
@@ -17,6 +18,7 @@ const Avatar = ({
   setKickIndex,
   index,
   onClick,
+  kickIndex,
 }: AvatarType) => {
   if (type === "headwear") {
     return (
@@ -80,7 +82,11 @@ const Avatar = ({
   if (type === "kicks") {
     return (
       <>
-        <div className="avatar-products">
+        <div
+          className={
+            index === kickIndex ? "avatar-products active" : "avatar-products"
+          }
+        >
           <div className="product">
             <img src={kick.image} alt="" onClick={onClick} />
           </div>

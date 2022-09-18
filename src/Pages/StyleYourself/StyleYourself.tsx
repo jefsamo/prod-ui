@@ -124,7 +124,8 @@ const StyleYourself = () => {
                       kick={kick}
                       // setKickIndex={setKickIndex}
                       onClick={() => handleClick(i)}
-                      // index={i}
+                      index={i}
+                      kickIndex={kickIndex}
                     />
                   );
                 })}

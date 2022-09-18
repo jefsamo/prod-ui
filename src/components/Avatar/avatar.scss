@@ -17,6 +17,10 @@
     align-items: center;
   }
 }
+.active {
+  border: 1px solid #48f19b;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 960px) {
   .avatar-products {
