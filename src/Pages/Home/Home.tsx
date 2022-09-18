@@ -23,15 +23,29 @@ const Home = () => {
             <a href="/">F*ck around and find out</a>
           </div>
         </div>
-        <div className="bottom-content">
-          <div className="image-container">
-            <img src={Balaclava} alt="" style={{ height: "300px" }} />
-          </div>
-          <div className="copyright">
-            <p>{new Date().getFullYear()}, RPTRD Sols</p>
-            <p>Rapture is coming</p>
+
+        <div className="footer-container">
+          <div className="flex-container">
+            <div className="image-container">
+              <img src={Balaclava} alt="" style={{ height: "300px" }} />
+            </div>
+            <div className="copyright">
+              <p>{new Date().getFullYear()}, RPTRD Sols</p>
+              <p>Rapture is coming</p>
+            </div>
           </div>
         </div>
+        {/* <div className="bottom-content">
+          <div className="flex-container">
+            <div className="image-container">
+              <img src={Balaclava} alt="" style={{ height: "300px" }} />
+            </div>
+            <div className="copyright">
+              <p>{new Date().getFullYear()}, RPTRD Sols</p>
+              <p>Rapture is coming</p>
+            </div>
+          </div>
+        </div> */}
 
         <div className="home-mobile">
           <div className="rapture-text">

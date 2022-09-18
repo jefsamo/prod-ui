@@ -2,7 +2,6 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
   position: relative;
 
   .home-content {
@@ -68,23 +67,45 @@
     }
   }
 
-  .bottom-content {
+  .footer-container {
     position: absolute;
     bottom: 0;
-    width: 90vw;
-    img {
-      height: 30%;
+    width: 87%;
+    max-width: 1300px;
+    margin: auto;
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+
+      .copyright {
+        align-self: flex-end;
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 500;
+      }
     }
   }
 
-  .copyright {
-    position: absolute;
-    bottom: 60px;
-    right: 60px;
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 500;
-  }
+  // .bottom-content {
+  //   position: absolute;
+  //   bottom: 0;
+  //   width: 90vw;
+  //   img {
+  //     height: 30%;
+  //   }
+  // }
+
+  // .copyright {
+  //   position: absolute;
+  //   bottom: 60px;
+  //   right: 60px;
+  //   font-family: "DM Sans";
+  //   font-style: normal;
+  //   font-weight: 500;
+  // }
 
   .home-mobile {
     display: none;
