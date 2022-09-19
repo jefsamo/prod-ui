@@ -14,6 +14,7 @@
       align-items: center;
       .rptrd-text {
         text-align: center;
+        animation: moveInLeft 2s;
         h1 {
           color: #00a551;
           font-family: "Akira Expanded";
@@ -29,6 +30,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        animation: moveInRight 2s;
         .image-container {
           width: 100%;
 
@@ -107,6 +109,32 @@
   }
   .home-mobile {
     display: none;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

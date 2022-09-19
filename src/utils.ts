@@ -50,61 +50,51 @@ export const data: TeamMemberType[] = [
   {
     name: "Maverick",
     role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    image: "https://arweave.net/t0VXftYjyMpZZHMcUejdgTx1wELxbpXlp4itN85XUjc",
   },
   {
-    name: "Maverick",
+    name: "Jason",
     role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    image: "https://arweave.net/bhk8KfHuaYIm_B4mYKyYcaWQgJqOWNYXMD_INvtl1iw",
   },
   {
-    name: "Maverick",
-    role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    name: "Goth Angel",
+    role: "Lead Artist",
+    image: "https://arweave.net/tJswnoAOi0s8w-p2GoicoHkHJvz5jB5Sp7vJAJrjXpE",
   },
   {
-    name: "Maverick",
-    role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    name: "LEX",
+    role: "Lead Dev",
+    image: "https://arweave.net/t0VXftYjyMpZZHMcUejdgTx1wELxbpXlp4itN85XUjc",
   },
   {
-    name: "Maverick",
-    role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    name: "Jamal",
+    role: "Artist",
+    image: "https://arweave.net/Ub0hWTvbJirJ2Rrew_1TnSp8WxwMqRMWrUdd4TiYW6E",
   },
   {
-    name: "Maverick",
-    role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    name: "Zeya",
+    role: "Community Manager",
+    image: "https://arweave.net/xHDUXAf6Al-J-zqAyZnq8igSZH5Rr-Q02gLrI59dauc",
   },
   {
-    name: "Maverick",
-    role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    name: "Michael",
+    role: "Communications",
+    image: "https://arweave.net/05NGY4sMu2pItuqf94a2RPnJcoTnlKyFQYQzyb0ineA",
   },
   {
-    name: "Maverick",
+    name: "Jerry",
     role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    image: "https://arweave.net/tJswnoAOi0s8w-p2GoicoHkHJvz5jB5Sp7vJAJrjXpE",
   },
   {
-    name: "Maverick",
+    name: "Web3 Dev",
     role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    image: "https://arweave.net/bhk8KfHuaYIm_B4mYKyYcaWQgJqOWNYXMD_INvtl1iw",
   },
   {
-    name: "Maverick",
-    role: "Co-Founder",
-    image:
-      "https://arweave.net/BPwP_9jaN8073GR1u8JFvyAycl9PyX0HmPKGYRJdREk?ext=png",
+    name: "JayB",
+    role: "Concept Artist",
+    image: "https://arweave.net/IeyCYo1jyTKmfFp6To4g59e0KqqcLwi4QRNQba2T3oA",
   },
 ];
