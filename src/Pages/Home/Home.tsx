@@ -7,69 +7,56 @@ import "./home.scss";
 const Home = () => {
   return (
     <div className="home">
-      <div className="container">
-        <Navbar active="home" />
-        <div className="home-content">
-          <div className="heading">
-            <h1>RPTRD</h1>
-            <h1>SOLS</h1>
+      <Navbar active="home" />
+      <div className="center">
+        <div className="inner-content">
+          <div className="rptrd-text">
+            <h1>Rptrd</h1>
+            <h1>Sols</h1>
           </div>
           <div className="image-content">
-            <div className="wrapper">
+            <div className="image-container">
               <img src={Home_Img} alt="" />
               <video src={Video} autoPlay muted loop className="gif" />
             </div>
-            <p>
-              We did it for the art. Want to <br /> learn more?
-            </p>
-            <a href="/">F*ck around and find out</a>
-          </div>
-        </div>
-
-        <div className="footer-container">
-          <div className="flex-container">
-            <div className="image-container">
-              <img src={Balaclava} alt="" style={{ height: "300px" }} />
-            </div>
-            <div className="copyright">
-              <p>{new Date().getFullYear()}, RPTRD Sols</p>
-              <p>Rapture is coming</p>
-            </div>
-          </div>
-        </div>
-        {/* <div className="bottom-content">
-          <div className="flex-container">
-            <div className="image-container">
-              <img src={Balaclava} alt="" style={{ height: "300px" }} />
-            </div>
-            <div className="copyright">
-              <p>{new Date().getFullYear()}, RPTRD Sols</p>
-              <p>Rapture is coming</p>
-            </div>
-          </div>
-        </div> */}
-
-        <div className="home-mobile">
-          <div className="rapture-text">
-            <a
-              href="https://rptrdsolsnft.medium.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              F*ck around and find out
+            <p>We did it for the art. Want to learn More?</p>
+            <a href="https://rptrdsolsnft.medium.com">
+              F*ck around and find out.
             </a>
-            <div className="copy">
-              <p>{new Date().getFullYear()}, RPTRD Sols</p>
-              <p>Rapture is coming</p>
-            </div>
           </div>
-          <div className="image">
-            <img
-              src={Balaclava}
-              alt=""
-              // style={{ width: "100px", height: "100px" }}
-            />
+        </div>
+      </div>
+      <div className="bottom-content">
+        <div className="inner-bottom">
+          <div className="bottom-image">
+            <img src={Balaclava} alt="" />
           </div>
+          <div className="copyright">
+            <p>{new Date().getFullYear()}, RPTRD Sols</p>
+            <p>Rapture is coming.</p>
+          </div>
+        </div>
+      </div>
+      <div className="home-mobile">
+        <div className="rapture-text">
+          <a
+            href="https://rptrdsolsnft.medium.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            F*ck around and find out
+          </a>
+          <div className="copy">
+            <p>{new Date().getFullYear()}, RPTRD Sols</p>
+            <p>Rapture is coming</p>
+          </div>
+        </div>
+        <div className="image">
+          <img
+            src={Balaclava}
+            alt=""
+            // style={{ width: "100px", height: "100px" }}
+          />
         </div>
       </div>
     </div>

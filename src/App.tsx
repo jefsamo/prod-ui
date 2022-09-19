@@ -10,7 +10,7 @@ import StyleYourself from "./Pages/StyleYourself/StyleYourself";
 
 function App() {
   return (
-    <div className="app">
+    <div className="container">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
