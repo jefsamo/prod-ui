@@ -35,11 +35,7 @@ const Navbar: FC<NavbarType> = ({ active }) => {
             <li className={active === "whitelist" ? "active tab" : "clickable"}>
               <Link to="/whitelist">Apply for WL</Link>
             </li>
-            <li
-              className={
-                active === "wallet-checker" ? "active tab" : "clickable"
-              }
-            >
+            <li className="inactive">
               <Link to="/wallet-checker">Wallet Checker</Link>
             </li>
             <li className="clickable">

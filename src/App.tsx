@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/haven" element={<Haven />} />
           <Route path="/souls" element={<Souls />} />
-          <Route path="/wallet-checker" element={<WalletChecker />} />
+          {/* <Route path="/wallet-checker" element={<WalletChecker />} /> */}
           <Route path="/soul-map" element={<SoulMap />} />
           <Route path="/whitelist" element={<ApplyForWL />} />
           <Route path="/style-yourself" element={<StyleYourself />} />
