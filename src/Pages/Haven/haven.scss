@@ -8,7 +8,7 @@
     .haven-story {
       margin-top: 60px;
       h1 {
-        font-family: "Akira Expanded";
+        font-family: "Akira";
         font-style: normal;
         font-weight: 800;
       }
@@ -26,6 +26,7 @@
       h2 {
         color: #00a551;
         font-style: normal;
+
         font-weight: 500;
         font-size: 2.25rem;
       }
@@ -69,6 +70,9 @@
   .society {
     h1 {
       margin: 20px 0;
+      font-family: "Akira";
+      font-style: normal;
+      font-weight: 800;
     }
     .profile-card {
       display: grid;
@@ -85,6 +89,11 @@
       grid-template-columns: repeat(2, 1fr);
       min-height: 500px;
       text-align: center;
+      h1 {
+        font-family: "Akira";
+        font-style: normal;
+        font-weight: 800;
+      }
 
       .levitate {
         img {
@@ -133,6 +142,11 @@
     }
 
     .rise-with-us {
+      h1 {
+        font-family: "Akira";
+        font-style: normal;
+        font-weight: 800;
+      }
       h1,
       p {
         margin: 10px 0;
