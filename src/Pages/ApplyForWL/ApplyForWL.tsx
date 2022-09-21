@@ -21,7 +21,10 @@ const ApplyForWL = () => {
             community comes first. so we’re setting a precedent where you can
             earn your RL (wl) based on your own creativity. LFG!
           </p>
-          <Link to="/style-yourself">Style Yourself</Link>
+          <Link to="/style-yourself">Get Creative</Link>
+          <p className="note" style={{ marginTop: "10px" }}>
+            in less than 60 seconds.
+          </p>
         </div>
       </div>
 

@@ -88,8 +88,8 @@ export const data: TeamMemberType[] = [
     image: "https://arweave.net/tJswnoAOi0s8w-p2GoicoHkHJvz5jB5Sp7vJAJrjXpE",
   },
   {
-    name: "Web3 Dev",
-    role: "Co-Founder",
+    name: "Jerry",
+    role: "Web3 Dev",
     image: "https://arweave.net/bhk8KfHuaYIm_B4mYKyYcaWQgJqOWNYXMD_INvtl1iw",
   },
   {
