@@ -24,118 +24,116 @@ const StyleYourself = () => {
 
   return (
     <div className="style-yourself">
-      <div className="container">
-        <Navbar active="" />
-        <div className="style-container">
-          <div className="left-content">
-            <div className="image-container">
-              <div className="content">
-                <img src={kicks[kickIndex].image} alt="" />
-              </div>
+      <Navbar active="" />
+      <div className="style-container">
+        <div className="left-content">
+          <div className="image-container">
+            <div className="content">
+              <img src={kicks[kickIndex].image} alt="" />
             </div>
           </div>
-          <div className="right-content">
-            <div className="buttons">
-              <div
-                className={state.headwear ? "active" : ""}
-                onClick={() =>
-                  setState({
-                    headwear: true,
-                    pants: false,
-                    shirts: false,
-                    kicks: false,
-                    accessories: false,
-                  })
-                }
-              >
-                Headwear
-              </div>
-              <div
-                className={state.shirts ? "active" : ""}
-                onClick={() =>
-                  setState({
-                    headwear: false,
-                    pants: false,
-                    shirts: true,
-                    kicks: false,
-                    accessories: false,
-                  })
-                }
-              >
-                Shirts
-              </div>
-              <div
-                className={state.pants ? "active" : ""}
-                onClick={() =>
-                  setState({
-                    headwear: false,
-                    pants: true,
-                    shirts: false,
-                    kicks: false,
-                    accessories: false,
-                  })
-                }
-              >
-                Pants
-              </div>
-              <div
-                className={state.kicks ? "active" : ""}
-                onClick={() =>
-                  setState({
-                    headwear: false,
-                    pants: false,
-                    shirts: false,
-                    kicks: true,
-                    accessories: false,
-                  })
-                }
-              >
-                Kicks
-              </div>
-              <div
-                className={state.accessories ? "active" : ""}
-                onClick={() =>
-                  setState({
-                    headwear: false,
-                    pants: false,
-                    shirts: false,
-                    kicks: false,
-                    accessories: true,
-                  })
-                }
-              >
-                Accessories
-              </div>
+        </div>
+        <div className="right-content">
+          <div className="buttons">
+            <div
+              className={state.headwear ? "active" : ""}
+              onClick={() =>
+                setState({
+                  headwear: true,
+                  pants: false,
+                  shirts: false,
+                  kicks: false,
+                  accessories: false,
+                })
+              }
+            >
+              Headwear
             </div>
-            <p>{kickIndex}</p>
-            <div className="avatar-details">
-              {/* {state.headwear && <Avatar type="headwear" />}
+            <div
+              className={state.shirts ? "active" : ""}
+              onClick={() =>
+                setState({
+                  headwear: false,
+                  pants: false,
+                  shirts: true,
+                  kicks: false,
+                  accessories: false,
+                })
+              }
+            >
+              Shirts
+            </div>
+            <div
+              className={state.pants ? "active" : ""}
+              onClick={() =>
+                setState({
+                  headwear: false,
+                  pants: true,
+                  shirts: false,
+                  kicks: false,
+                  accessories: false,
+                })
+              }
+            >
+              Pants
+            </div>
+            <div
+              className={state.kicks ? "active" : ""}
+              onClick={() =>
+                setState({
+                  headwear: false,
+                  pants: false,
+                  shirts: false,
+                  kicks: true,
+                  accessories: false,
+                })
+              }
+            >
+              Kicks
+            </div>
+            <div
+              className={state.accessories ? "active" : ""}
+              onClick={() =>
+                setState({
+                  headwear: false,
+                  pants: false,
+                  shirts: false,
+                  kicks: false,
+                  accessories: true,
+                })
+              }
+            >
+              Accessories
+            </div>
+          </div>
+          <p>{kickIndex}</p>
+          <div className="avatar-details">
+            {/* {state.headwear && <Avatar type="headwear" />}
 
               {state.shirts && <Avatar type="shirts" />}
 
               {state.pants && <Avatar type="pants" />} */}
 
-              {state.kicks &&
-                kicks.map((kick: Kick, i: number) => {
-                  return (
-                    <Avatar
-                      key={i}
-                      type="kicks"
-                      kick={kick}
-                      // setKickIndex={setKickIndex}
-                      onClick={() => handleClick(i)}
-                      index={i}
-                      kickIndex={kickIndex}
-                    />
-                  );
-                })}
+            {state.kicks &&
+              kicks.map((kick: Kick, i: number) => {
+                return (
+                  <Avatar
+                    key={i}
+                    type="kicks"
+                    kick={kick}
+                    // setKickIndex={setKickIndex}
+                    onClick={() => handleClick(i)}
+                    index={i}
+                    kickIndex={kickIndex}
+                  />
+                );
+              })}
 
-              {/* {state.accessories && <Avatar type="accessories" />} */}
-            </div>
+            {/* {state.accessories && <Avatar type="accessories" />} */}
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

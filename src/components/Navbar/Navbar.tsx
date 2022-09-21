@@ -35,9 +35,9 @@ const Navbar: FC<NavbarType> = ({ active }) => {
             <li className={active === "whitelist" ? "active tab" : "clickable"}>
               <Link to="/whitelist">Apply for WL</Link>
             </li>
-            <li className="inactive">
+            {/* <li className="inactive">
               <Link to="/wallet-checker">Wallet Checker</Link>
-            </li>
+            </li> */}
             <li className="clickable">
               <a
                 href="https://twitter.com/raptur3dsols"

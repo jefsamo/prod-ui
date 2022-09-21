@@ -119,6 +119,12 @@
   .whitelist-container {
     .center-items {
       width: 100%;
+
+      .inner-items {
+        h1 {
+          font-size: 2rem;
+        }
+      }
     }
   }
 }
