@@ -5,6 +5,10 @@ import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Avatar from "../../components/Avatar/Avatar";
 import { KicksData, Kick } from "../../utils";
+import Base from "./svg/base.png";
+import Shirt from "./svg/shirt.png";
+import Pant from "./svg/trouser.png";
+import Kicks from "./svg/kicks.png";
 
 const StyleYourself = () => {
   const [state, setState] = useState({
@@ -16,7 +20,7 @@ const StyleYourself = () => {
   });
 
   const [kicks] = useState<Kick[] | []>(KicksData);
-  const [kickIndex, setKickIndex] = useState(0);
+  const [kickIndex, setKickIndex] = useState(-1);
 
   const handleClick = (index: number) => {
     setKickIndex(index);
@@ -28,9 +32,27 @@ const StyleYourself = () => {
       <div className="style-container">
         <div className="left-content">
           <div className="image-container">
-            <div className="content">
-              <img src={kicks[kickIndex].image} alt="" />
+            <div className="image-base">
+              <img src={Base} alt="" style={{ width: "100%" }} />
             </div>
+            <div className="image-kicks">
+              <img
+                src={Kicks}
+                alt=""
+                style={{ width: "100%" }}
+                className="kicks"
+              />
+            </div>
+            <div className="image-shirt">
+              <img src={Shirt} alt="" style={{ width: "100%" }} />
+            </div>
+            <div className="image-pant">
+              <img src={Pant} alt="" style={{ width: "100%" }} />
+            </div>
+
+            {/* <div className="content">
+              <img src={kicks[kickIndex]?.image} alt="" />
+            </div> */}
           </div>
         </div>
         <div className="right-content">
@@ -106,7 +128,7 @@ const StyleYourself = () => {
               Accessories
             </div>
           </div>
-          <p>{kickIndex}</p>
+          {/* <p>{kickIndex}</p> */}
           <div className="avatar-details">
             {/* {state.headwear && <Avatar type="headwear" />}
 
