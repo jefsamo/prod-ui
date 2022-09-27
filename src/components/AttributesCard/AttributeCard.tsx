@@ -1,4 +1,3 @@
-import React from "react";
 import "./attributesCard.scss";
 
 const AttributesCard = () => {

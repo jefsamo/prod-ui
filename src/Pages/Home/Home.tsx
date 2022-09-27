@@ -15,14 +15,16 @@ const Home = () => {
             <h1>Sols</h1>
           </div>
           <div className="image-content">
-            <div className="image-container">
-              <img src={Home_Img} alt="" />
-              <video src={Video} autoPlay muted loop className="gif" />
+            <div className="image-content-inner">
+              <div className="image-container">
+                <img src={Home_Img} alt="" />
+                <video src={Video} autoPlay muted loop className="gif" />
+              </div>
+              <p>We did it for the art. Want to learn More?</p>
+              <a href="https://rptrdsolsnft.medium.com">
+                F*ck around and find out.
+              </a>
             </div>
-            <p>We did it for the art. Want to learn More?</p>
-            <a href="https://rptrdsolsnft.medium.com">
-              F*ck around and find out.
-            </a>
           </div>
         </div>
       </div>

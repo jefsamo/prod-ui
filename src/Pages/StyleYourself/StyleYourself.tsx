@@ -21,6 +21,7 @@ const StyleYourself = () => {
 
   const [kicks] = useState<Kick[] | []>(KicksData);
   const [kickIndex, setKickIndex] = useState(-1);
+  console.log(kickIndex);
 
   const handleClick = (index: number) => {
     setKickIndex(index);
@@ -44,10 +45,18 @@ const StyleYourself = () => {
               />
             </div>
             <div className="image-shirt">
-              <img src={Shirt} alt="" style={{ width: "100%" }} />
+              <img
+                src={kicks[kickIndex]?.image}
+                alt=""
+                style={{ width: "100%" }}
+              />
             </div>
             <div className="image-pant">
-              <img src={Pant} alt="" style={{ width: "100%" }} />
+              <img
+                src={kicks[kickIndex]?.image}
+                alt=""
+                style={{ width: "100%" }}
+              />
             </div>
 
             {/* <div className="content">

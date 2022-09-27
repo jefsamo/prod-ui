@@ -1,4 +1,6 @@
 import Kicks from "./svg/image.png";
+import Shirt from "./svg/shirt.png";
+import Trouser from "./svg/trouser.png";
 
 export type NavbarType = {
   active: string;

@@ -43,6 +43,7 @@
     .buttons {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
 
       div {
         padding: 8px 24px;
@@ -55,7 +56,7 @@
         text-align: center;
         color: #23272a;
         cursor: pointer;
-        margin-left: 10px;
+        // margin-left: 10px;
       }
       .active {
         background: #48f19b;
