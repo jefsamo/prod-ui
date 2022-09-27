@@ -35,7 +35,7 @@ const ApplyForWL = () => {
             <a href="https://twitter.com/raptur3dsols">
               <img src={Twitter} alt="" />
             </a>
-            <a href="https://twitter.com/rapyur3dsols">
+            <a href="https://discord.gg/tCF7nwdgfn">
               <img src={Discord} alt="" />
             </a>
           </div>
