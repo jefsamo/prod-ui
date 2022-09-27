@@ -96,7 +96,9 @@
           background: #f9f9f9;
           border-radius: 5px;
           margin: 0 10px;
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           padding: 12px 24px;
         }
       }
