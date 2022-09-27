@@ -103,18 +103,6 @@
   }
 }
 
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @media screen and (max-width: 960px) {
   .whitelist-container {
     .center-items {
@@ -126,5 +114,29 @@
         }
       }
     }
+    .footer-items {
+      .inner-footer {
+        p {
+          font-size: 0.75rem;
+        }
+        .quicklinks {
+          a {
+            padding: 8px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
