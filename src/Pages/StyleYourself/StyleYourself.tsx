@@ -6,8 +6,9 @@ import Footer from "../../components/Footer/Footer";
 import Avatar from "../../components/Avatar/Avatar";
 import { KicksData, Kick } from "../../utils";
 import Base from "./svg/base.png";
-import Shirt from "./svg/shirt.png";
-import Pant from "./svg/trouser.png";
+import Coat from "./svg/coat.png";
+import Pant from "./svg/boyfriend_jeans.png";
+import Boot from "./svg/chelsea.png";
 import Kicks from "./svg/kicks.png";
 
 const StyleYourself = () => {
@@ -38,7 +39,7 @@ const StyleYourself = () => {
             </div>
             <div className="image-kicks">
               <img
-                src={Kicks}
+                src={Boot}
                 alt=""
                 style={{ width: "100%" }}
                 className="kicks"
@@ -46,14 +47,16 @@ const StyleYourself = () => {
             </div>
             <div className="image-shirt">
               <img
-                src={kicks[kickIndex]?.image}
+                // src={kicks[kickIndex]?.image}
+                src={Coat}
                 alt=""
                 style={{ width: "100%" }}
               />
             </div>
             <div className="image-pant">
               <img
-                src={kicks[kickIndex]?.image}
+                // src={kicks[kickIndex]?.image}
+                src={Pant}
                 alt=""
                 style={{ width: "100%" }}
               />

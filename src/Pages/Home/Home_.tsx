@@ -8,18 +8,15 @@ const Home = () => {
   return (
     <div className="home">
       <Navbar active="home" />
-      <div className="main-content">
-        <div className="left-content">
-          <img src={Balaclava} alt="" />
-        </div>
-        <div className="center-content">
-          <div className="header-text">
-            <h1>RPTRD</h1>
-            <h1>SOLS</h1>
+      <div className="center">
+        <div className="inner-content">
+          <div className="rptrd-text">
+            <h1>Rptrd</h1>
+            <h1>Sols</h1>
           </div>
-          <div className="image">
-            <div className="inner-image">
-              <div className="content-img">
+          <div className="image-content">
+            <div className="image-content-inner">
+              <div className="image-container">
                 <img src={Home_Img} alt="" />
                 <video src={Video} autoPlay muted loop className="gif" />
               </div>
@@ -30,9 +27,16 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="right-content">
-          <p>{new Date().getFullYear()}, RPTRD Sols</p>
-          <p>Rapture is coming</p>
+      </div>
+      <div className="bottom-content">
+        <div className="inner-bottom">
+          <div className="bottom-image">
+            <img src={Balaclava} alt="" />
+          </div>
+          <div className="copyright">
+            <p>{new Date().getFullYear()}, RPTRD Sols</p>
+            <p>Rapture is coming.</p>
+          </div>
         </div>
       </div>
       <div className="home-mobile">
