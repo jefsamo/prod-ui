@@ -39,7 +39,7 @@ const StyleYourself = () => {
             </div>
             <div className="image-kicks">
               <img
-                src={Boot}
+                src={kicks[kickIndex]?.image}
                 alt=""
                 style={{ width: "100%" }}
                 className="kicks"

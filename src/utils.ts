@@ -1,4 +1,5 @@
-import Kicks from "./svg/image.png";
+import Kicks from "./svg/kicks.png";
+import Chelsea from "./svg/chelsea.png";
 import Shirt from "./svg/shirt.png";
 import Trouser from "./svg/trouser.png";
 
@@ -21,7 +22,7 @@ export const KicksData: Kick[] = [
     image: Kicks,
   },
   {
-    image: Kicks,
+    image: Chelsea,
   },
   {
     image: Kicks,
