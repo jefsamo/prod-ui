@@ -91,10 +91,12 @@
       flex-direction: column;
       width: 100%;
       position: absolute;
+      transition: all 0.7s ease 0s;
       // height: 300px;
       z-index: 10;
       background-color: white;
       top: 100px;
+      transition: 0.5s;
       ul {
         z-index: 1000;
         .active,

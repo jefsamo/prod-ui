@@ -1,5 +1,7 @@
 .haven {
   font-family: "DM Sans", sans-serif;
+  height: 100vh;
+  position: relative;
   .haven-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
