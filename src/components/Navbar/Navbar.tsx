@@ -48,7 +48,7 @@ const Navbar: FC<NavbarType> = ({ active }) => {
               </a>
             </li>
             <li className="clickable">
-              <Link to="">
+              <Link to="https://discord.gg/tCF7nwdgfn">
                 <img src={Discord} alt="" />
               </Link>
             </li>
