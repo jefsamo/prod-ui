@@ -1,15 +1,12 @@
 import Navbar from "../../components/Navbar/Navbar";
-// import Avatar2 from "./svg/avatar.png";
 import "./styleYourself.scss";
 import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Avatar from "../../components/Avatar/Avatar";
-import { KicksData, Kick } from "../../utils";
+import { KicksData, Kick } from "../../kicks";
+import { ShirtsData, Shirt } from "../../shirts";
+import { PantsData, Pant } from "../../pants";
 import Base from "./svg/base.png";
-import Coat from "./svg/coat.png";
-import Pant from "./svg/boyfriend_jeans.png";
-import Boot from "./svg/chelsea.png";
-import Kicks from "./svg/kicks.png";
 
 const StyleYourself = () => {
   const [state, setState] = useState({
@@ -22,10 +19,20 @@ const StyleYourself = () => {
 
   const [kicks] = useState<Kick[] | []>(KicksData);
   const [kickIndex, setKickIndex] = useState(-1);
-  console.log(kickIndex);
-
-  const handleClick = (index: number) => {
+  const handleKicksClick = (index: number) => {
     setKickIndex(index);
+  };
+
+  const [shirts] = useState<Shirt[] | []>(ShirtsData);
+  const [shirtIndex, setShirtIndex] = useState(-1);
+  const handleShirtsClick = (index: number) => {
+    setShirtIndex(index);
+  };
+
+  const [pants] = useState<Pant[] | []>(PantsData);
+  const [pantIndex, setPantIndex] = useState(-1);
+  const handlePantClick = (index: number) => {
+    setPantIndex(index);
   };
 
   return (
@@ -47,16 +54,14 @@ const StyleYourself = () => {
             </div>
             <div className="image-shirt">
               <img
-                // src={kicks[kickIndex]?.image}
-                src={Coat}
+                src={shirts[shirtIndex]?.image}
                 alt=""
                 style={{ width: "100%" }}
               />
             </div>
             <div className="image-pant">
               <img
-                // src={kicks[kickIndex]?.image}
-                src={Pant}
+                src={pants[pantIndex]?.image}
                 alt=""
                 style={{ width: "100%" }}
               />
@@ -146,7 +151,34 @@ const StyleYourself = () => {
 
               {state.shirts && <Avatar type="shirts" />}
 
-              {state.pants && <Avatar type="pants" />} */}
+              {state.pants && <Avatar type="pants" />}  */}
+            {state.shirts &&
+              shirts.map((shirt: Shirt, i: number) => {
+                return (
+                  <Avatar
+                    key={i}
+                    type="shirts"
+                    shirt={shirt}
+                    onClick={() => handleShirtsClick(i)}
+                    index={i}
+                    shirtIndex={shirtIndex}
+                  />
+                );
+              })}
+
+            {state.pants &&
+              pants.map((pant: Pant, i: number) => {
+                return (
+                  <Avatar
+                    key={i}
+                    type="pants"
+                    pant={pant}
+                    onClick={() => handlePantClick(i)}
+                    index={i}
+                    pantIndex={pantIndex}
+                  />
+                );
+              })}
 
             {state.kicks &&
               kicks.map((kick: Kick, i: number) => {
@@ -155,8 +187,7 @@ const StyleYourself = () => {
                     key={i}
                     type="kicks"
                     kick={kick}
-                    // setKickIndex={setKickIndex}
-                    onClick={() => handleClick(i)}
+                    onClick={() => handleKicksClick(i)}
                     index={i}
                     kickIndex={kickIndex}
                   />

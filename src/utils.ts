@@ -1,8 +1,3 @@
-import Kicks from "./svg/kicks.png";
-import Chelsea from "./svg/chelsea.png";
-import Shirt from "./svg/shirt.png";
-import Trouser from "./svg/trouser.png";
-
 export type NavbarType = {
   active: string;
 };
@@ -13,42 +8,6 @@ export type TeamMemberType = {
   image: string;
 };
 
-export type Kick = {
-  image: string;
-};
-
-export const KicksData: Kick[] = [
-  {
-    image: Kicks,
-  },
-  {
-    image: Chelsea,
-  },
-  {
-    image: Kicks,
-  },
-  {
-    image: Kicks,
-  },
-  {
-    image: Kicks,
-  },
-  {
-    image: Kicks,
-  },
-  {
-    image: Kicks,
-  },
-  {
-    image: Kicks,
-  },
-  {
-    image: Kicks,
-  },
-  {
-    image: Kicks,
-  },
-];
 export const data: TeamMemberType[] = [
   {
     name: "Maverick",
