@@ -69,7 +69,12 @@
   .clickable {
     background: #f9f9f9;
     border-radius: 5px;
-    color: #e7e7e7;
+    color: #23272a;
+    transition: all 0.7s ease 0s;
+    &:hover {
+      background: #f1f1f1;
+      color: #23272a;
+    }
   }
   img {
     display: block;
@@ -102,7 +107,7 @@
       z-index: 200;
       background-color: white;
       top: 100px;
-      transition: 0.5s;
+      // transition: 0.5s;
       ul {
         list-style: none;
         background-color: white;
