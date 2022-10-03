@@ -12,9 +12,9 @@ import Base from "./svg/base.png";
 
 const StyleYourself = () => {
   const [state, setState] = useState({
-    headwear: true,
+    headwear: false,
     pants: false,
-    shirts: false,
+    shirts: true,
     kicks: false,
     accessories: false,
   });
@@ -83,20 +83,6 @@ const StyleYourself = () => {
         <div className="right-content">
           <div className="buttons">
             <div
-              className={state.headwear ? "active" : ""}
-              onClick={() =>
-                setState({
-                  headwear: true,
-                  pants: false,
-                  shirts: false,
-                  kicks: false,
-                  accessories: false,
-                })
-              }
-            >
-              Headwear
-            </div>
-            <div
               className={state.shirts ? "active" : ""}
               onClick={() =>
                 setState({
@@ -137,6 +123,20 @@ const StyleYourself = () => {
               }
             >
               Kicks
+            </div>
+            <div
+              className={state.headwear ? "active" : ""}
+              onClick={() =>
+                setState({
+                  headwear: true,
+                  pants: false,
+                  shirts: false,
+                  kicks: false,
+                  accessories: false,
+                })
+              }
+            >
+              Headwear
             </div>
             <div
               className={state.accessories ? "active" : ""}
