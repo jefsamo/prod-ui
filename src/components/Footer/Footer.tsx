@@ -11,13 +11,13 @@ const Footer = () => {
         <p>Connect With the Rapture, Don’t get left behind</p>
         <div className="quick-links">
           <a href="https://twitter.com/raptur3dsols">
-            <img src={Twitter} alt="" />
+            <img src={Twitter} alt="Twitter logo" />
           </a>
-          <a href="https://twitter.com">
-            <img src={Discord} alt="" />
+          <a href="https://discord.gg/tCF7nwdgfn">
+            <img src={Discord} alt="Discord logo" />
           </a>
           <a href="https://rptrdsolsnft.medium.com">
-            <img src={Medium} alt="" />
+            <img src={Medium} alt="Medium logo" />
           </a>
         </div>
       </div>

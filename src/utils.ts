@@ -36,7 +36,7 @@ export const data: TeamMemberType[] = [
   },
   {
     name: "Zeya",
-    role: "Community Manager",
+    role: "Community Lead",
     image: "https://arweave.net/xHDUXAf6Al-J-zqAyZnq8igSZH5Rr-Q02gLrI59dauc",
   },
   {
@@ -46,12 +46,12 @@ export const data: TeamMemberType[] = [
   },
   {
     name: "Jerry",
-    role: "Co-Founder",
+    role: "Web3 Dev",
     image: "https://arweave.net/tJswnoAOi0s8w-p2GoicoHkHJvz5jB5Sp7vJAJrjXpE",
   },
   {
-    name: "Jerry",
-    role: "Web3 Dev",
+    name: "Cactuz",
+    role: "Community manager",
     image: "https://arweave.net/bhk8KfHuaYIm_B4mYKyYcaWQgJqOWNYXMD_INvtl1iw",
   },
   {

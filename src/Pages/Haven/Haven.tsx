@@ -19,7 +19,7 @@ const Haven = () => {
             Rest you weary souls, <br />
             <Typewriter
               options={{
-                strings: ["Rapture is here."],
+                strings: ["Rapture is coming.", "Rapture is here."],
                 autoStart: true,
                 loop: true,
               }}
