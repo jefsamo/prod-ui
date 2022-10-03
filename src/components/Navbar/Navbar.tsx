@@ -44,13 +44,17 @@ const Navbar: FC<NavbarType> = ({ active }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Twitter} alt="" />
+                <img src={Twitter} alt="Twitter logo" />
               </a>
             </li>
             <li className="clickable">
-              <Link to="https://discord.gg/tCF7nwdgfn">
-                <img src={Discord} alt="" />
-              </Link>
+              <a
+                href="https://discord.gg/tCF7nwdgfn"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Discord} alt="Discord logo" />
+              </a>
             </li>
           </ul>
         </nav>

@@ -1,3 +1,4 @@
+import Typewriter from "typewriter-effect";
 import Navbar from "../../components/Navbar/Navbar";
 import Poster from "./svg/poster.png";
 import RL from "./svg/rptrd-reeb.png";
@@ -15,8 +16,16 @@ const Haven = () => {
         <div className="haven-story">
           <h1>Y[OUR] HAVEN</h1>
           <h2>
-            Rest you weary souls, <br /> Rapture is here.
+            Rest you weary souls, <br />
+            <Typewriter
+              options={{
+                strings: ["Rapture is here."],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h2>
+
           <p>
             An amazing brand created for extraordinary people. <br />
             <br /> We live in a world defined by good and bad, right and wrong,
