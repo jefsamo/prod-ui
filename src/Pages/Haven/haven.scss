@@ -91,6 +91,13 @@
       grid-template-columns: repeat(2, 1fr);
       min-height: 500px;
       text-align: center;
+
+      .levitate {
+        .levitate-img {
+          // transition: all 0.3s ease 0s;
+          animation: moveInInfinite 3s linear infinite alternate;
+        }
+      }
       h1 {
         font-family: "Akira";
         font-style: normal;
@@ -233,5 +240,30 @@
         }
       }
     }
+  }
+}
+
+@keyframes moveInInfinite {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -61,7 +61,7 @@ const Haven = () => {
       <div className="rise">
         <div className="rise-content">
           <div className="levitate">
-            <img src={RL} alt="" />
+            <img src={RL} alt="" className="levitate-img" />
           </div>
           <div className="right-content">
             <h1>YOU'LL RISE TOO</h1>

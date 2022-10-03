@@ -1,6 +1,8 @@
 import { Kick } from "../../kicks";
 import { Shirt } from "../../shirts";
 import { Pant } from "../../pants";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./avatar.scss";
 
 export type AvatarType = {
@@ -57,7 +59,14 @@ const Avatar = ({
           }
         >
           <div className="product">
-            <img src={shirt?.image} alt="" onClick={onClick} />
+            <LazyLoadImage
+              src={shirt?.image}
+              alt=""
+              onClick={onClick}
+              effect="blur"
+              placeholderSrc={shirt?.image}
+            />
+            {/* <img src={shirt?.image} alt="" onClick={onClick} /> */}
           </div>
         </div>
       </>
@@ -72,7 +81,13 @@ const Avatar = ({
           }
         >
           <div className="product">
-            <img src={pant?.image} alt="" onClick={onClick} />
+            <LazyLoadImage
+              src={pant?.image}
+              alt=""
+              onClick={onClick}
+              effect="blur"
+              placeholderSrc={pant?.image}
+            />
           </div>
         </div>
       </>
@@ -87,7 +102,13 @@ const Avatar = ({
           }
         >
           <div className="product">
-            <img src={kick?.image} alt="" onClick={onClick} />
+            <LazyLoadImage
+              src={kick?.image}
+              alt=""
+              onClick={onClick}
+              effect="blur"
+              placeholderSrc={kick?.image}
+            />
           </div>
         </div>
       </>

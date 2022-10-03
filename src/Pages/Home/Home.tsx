@@ -1,7 +1,8 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Home_Img from "./svg/home_img.png";
 import Video from "./svg/rptrd.mp4";
-import Balaclava from "./svg/balaclava.png";
+import Balaclava from "./svg/desktop.png";
+import Mobile from "./svg/mobile.png";
 import "./home.scss";
 
 const Home = () => {
@@ -50,11 +51,13 @@ const Home = () => {
           </div>
         </div>
         <div className="image">
-          <img
-            src={Balaclava}
-            alt=""
-            // style={{ width: "100px", height: "100px" }}
-          />
+          <div className="img-container">
+            <img
+              src={Balaclava}
+              alt=""
+              // style={{ width: "100px", height: "100px" }}
+            />
+          </div>
         </div>
       </div>
     </div>
