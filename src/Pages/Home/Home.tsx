@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Home_Img from "./svg/home_img.png";
 import Video from "./svg/rptrd.mp4";
 import Balaclava from "./svg/desktop.png";
-import Mobile from "./svg/mobile.png";
+// import Mobile from "./svg/mobile.png";
 import "./home.scss";
 
 const Home = () => {
