@@ -6,6 +6,8 @@ import Avatar from "../../components/Avatar/Avatar";
 import { KicksData, Kick } from "../../kicks";
 import { ShirtsData, Shirt } from "../../shirts";
 import { PantsData, Pant } from "../../pants";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import Base from "./svg/base.png";
 
 const StyleYourself = () => {
@@ -42,7 +44,13 @@ const StyleYourself = () => {
         <div className="left-content">
           <div className="image-container">
             <div className="image-base">
-              <img src={Base} alt="" style={{ width: "100%" }} />
+              <LazyLoadImage
+                src={Base}
+                alt=""
+                style={{ width: "100%" }}
+                effect="blur"
+                placeholderSrc={Base}
+              />
             </div>
             <div className="image-kicks">
               <img
