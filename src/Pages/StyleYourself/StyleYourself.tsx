@@ -20,21 +20,25 @@ const StyleYourself = () => {
   });
 
   const [kicks] = useState<Kick[] | []>(KicksData);
-  const [kickIndex, setKickIndex] = useState(-1);
-  const handleKicksClick = (index: number) => {
-    setKickIndex(index);
-  };
-
   const [shirts] = useState<Shirt[] | []>(ShirtsData);
-  const [shirtIndex, setShirtIndex] = useState(-1);
-  const handleShirtsClick = (index: number) => {
-    setShirtIndex(index);
-  };
-
   const [pants] = useState<Pant[] | []>(PantsData);
+
+  const [kickIndex, setKickIndex] = useState(-1);
+  const [shirtIndex, setShirtIndex] = useState(-1);
   const [pantIndex, setPantIndex] = useState(-1);
-  const handlePantClick = (index: number) => {
-    setPantIndex(index);
+
+  type Attribute = "pants" | "kicks" | "shirts";
+
+  const handleClick = (index: number, type: Attribute) => {
+    if (type === "kicks") {
+      setKickIndex(index);
+    }
+    if (type === "shirts") {
+      setShirtIndex(index);
+    }
+    if (type === "pants") {
+      setPantIndex(index);
+    }
   };
 
   return (
@@ -167,7 +171,7 @@ const StyleYourself = () => {
                     key={i}
                     type="shirts"
                     shirt={shirt}
-                    onClick={() => handleShirtsClick(i)}
+                    onClick={() => handleClick(i, "shirts")}
                     index={i}
                     shirtIndex={shirtIndex}
                   />
@@ -181,7 +185,7 @@ const StyleYourself = () => {
                     key={i}
                     type="pants"
                     pant={pant}
-                    onClick={() => handlePantClick(i)}
+                    onClick={() => handleClick(i, "pants")}
                     index={i}
                     pantIndex={pantIndex}
                   />
@@ -195,7 +199,7 @@ const StyleYourself = () => {
                     key={i}
                     type="kicks"
                     kick={kick}
-                    onClick={() => handleKicksClick(i)}
+                    onClick={() => handleClick(i, "kicks")}
                     index={i}
                     kickIndex={kickIndex}
                   />
