@@ -1,7 +1,8 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Home_Img from "./svg/home_img.png";
-import Video from "./svg/rptrd.mp4";
-import Balaclava from "./svg/desktop.png";
+import Video from "./svg/rptrd3.mp4";
+import Balaclava from "./svg/tgg-2.png";
+import TGG from "./svg/tgg.png";
 // import Mobile from "./svg/mobile.png";
 import "./home.scss";
 
@@ -53,7 +54,7 @@ const Home = () => {
         <div className="image">
           <div className="img-container">
             <img
-              src={Balaclava}
+              src={TGG}
               alt=""
               // style={{ width: "100px", height: "100px" }}
             />

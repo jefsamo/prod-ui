@@ -1,6 +1,7 @@
 import { Kick } from "../../kicks";
 import { Shirt } from "../../shirts";
 import { Pant } from "../../pants";
+import { Head } from "../../headwear";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "./avatar.scss";
@@ -19,6 +20,9 @@ export type AvatarType = {
   pant?: Pant;
   pants?: Pant[];
   pantIndex?: number;
+  head?: Head;
+  heads?: Head[];
+  headwearIndex?: number;
 };
 
 const Avatar = ({
@@ -34,18 +38,28 @@ const Avatar = ({
   shirts,
   pant,
   pantIndex,
+  head,
+  headwearIndex,
 }: AvatarType) => {
-  if (type === "headwear") {
+  if (type === "headwears") {
     return (
       <>
-        <div className="avatar-products">
-          {kicks?.map((kick: Kick, i) => {
-            return (
-              <div className="product">
-                <img src={kick.image} alt="" />
-              </div>
-            );
-          })}
+        <div
+          className={
+            index === headwearIndex
+              ? "avatar-products active"
+              : "avatar-products"
+          }
+        >
+          <div className="product">
+            <LazyLoadImage
+              src={head?.image}
+              alt=""
+              onClick={onClick}
+              effect="blur"
+              placeholderSrc={head?.image}
+            />
+          </div>
         </div>
       </>
     );

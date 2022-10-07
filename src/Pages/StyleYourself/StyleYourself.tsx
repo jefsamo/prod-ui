@@ -3,9 +3,10 @@ import "./styleYourself.scss";
 import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Avatar from "../../components/Avatar/Avatar";
-import { KicksData, Kick } from "../../kicks";
-import { ShirtsData, Shirt } from "../../shirts";
-import { PantsData, Pant } from "../../pants";
+import { KicksData, Kick, KicksAvatar } from "../../kicks";
+import { ShirtsData, Shirt, ShirtsAvatar } from "../../shirts";
+import { PantsData, Pant, PantsAvatar } from "../../pants";
+import { HeadData, Head, HeadAvatar } from "../../headwear";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Base from "./svg/base.png";
@@ -19,15 +20,24 @@ const StyleYourself = () => {
     accessories: false,
   });
 
-  const [kicks] = useState<Kick[] | []>(KicksData);
-  const [shirts] = useState<Shirt[] | []>(ShirtsData);
-  const [pants] = useState<Pant[] | []>(PantsData);
+  const [headwears] = useState<Head[] | []>(HeadAvatar);
+  const [headwearsData] = useState<Head[] | []>(HeadData);
+
+  const [kicks] = useState<Kick[] | []>(KicksAvatar);
+  const [kicksData] = useState<Kick[] | []>(KicksData);
+
+  const [shirts] = useState<Shirt[] | []>(ShirtsAvatar);
+  const [shirtsData] = useState<Shirt[] | []>(ShirtsData);
+
+  const [pants] = useState<Pant[] | []>(PantsAvatar);
+  const [pantsData] = useState<Pant[] | []>(PantsData);
 
   const [kickIndex, setKickIndex] = useState(-1);
   const [shirtIndex, setShirtIndex] = useState(-1);
   const [pantIndex, setPantIndex] = useState(-1);
+  const [headwearIndex, setHeadwearIndex] = useState(-1);
 
-  type Attribute = "pants" | "kicks" | "shirts";
+  type Attribute = "pants" | "kicks" | "shirts" | "headwears";
 
   const handleClick = (index: number, type: Attribute) => {
     if (type === "kicks") {
@@ -38,6 +48,9 @@ const StyleYourself = () => {
     }
     if (type === "pants") {
       setPantIndex(index);
+    }
+    if (type === "headwears") {
+      setHeadwearIndex(index);
     }
   };
 
@@ -58,7 +71,7 @@ const StyleYourself = () => {
             </div>
             <div className="image-kicks">
               <img
-                src={kicks[kickIndex]?.image}
+                src={kicksData[kickIndex]?.image}
                 alt=""
                 style={{ width: "100%" }}
                 className="kicks"
@@ -66,14 +79,21 @@ const StyleYourself = () => {
             </div>
             <div className="image-shirt">
               <img
-                src={shirts[shirtIndex]?.image}
+                src={shirtsData[shirtIndex]?.image}
                 alt=""
                 style={{ width: "100%" }}
               />
             </div>
             <div className="image-pant">
               <img
-                src={pants[pantIndex]?.image}
+                src={pantsData[pantIndex]?.image}
+                alt=""
+                style={{ width: "100%" }}
+              />
+            </div>
+            <div className="image-headwear">
+              <img
+                src={headwearsData[headwearIndex]?.image}
                 alt=""
                 style={{ width: "100%" }}
               />
@@ -202,6 +222,20 @@ const StyleYourself = () => {
                     onClick={() => handleClick(i, "kicks")}
                     index={i}
                     kickIndex={kickIndex}
+                  />
+                );
+              })}
+
+            {state.headwear &&
+              headwears.map((head: Head, i: number) => {
+                return (
+                  <Avatar
+                    key={i}
+                    type="headwears"
+                    head={head}
+                    onClick={() => handleClick(i, "headwears")}
+                    index={i}
+                    headwearIndex={headwearIndex}
                   />
                 );
               })}

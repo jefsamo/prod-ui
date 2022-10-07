@@ -1,5 +1,6 @@
 .soul-map {
-  height: 100vh;
+  // height: 100vh;
+  overflow: hidden;
   position: relative;
   .soulmap-content {
     margin: 50px 0 0 0;
@@ -18,7 +19,7 @@
         border: 1px solid #23272a;
         color: #23272a;
         border-radius: 20px;
-        padding: 10px 10px;
+        padding: 12px 24px;
         transition: all 0.3s ease 0s;
 
         &:hover {
@@ -58,19 +59,28 @@
 
 @media screen and (max-width: 960px) {
   .soul-map {
+    overflow: hidden;
     .soulmap-content {
       margin: 0px 0 0 0;
       display: grid;
       grid-template-columns: 1fr;
-      min-height: 100vh;
 
       .left-content {
         margin-bottom: -70px;
+
+        a {
+          font-size: 12px;
+          padding: 12px 24px;
+        }
         p {
           color: #b8b8b8;
+          font-size: 14px;
         }
         .rptrd {
           display: none;
+        }
+        h1 {
+          font-size: 16px;
         }
       }
     }

@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
-import Haven from "./svg/haven_map.png";
+import Haven from "./svg/haven-map.jpg";
 import "./soulMap.scss";
 
 const SoulMap = () => {
