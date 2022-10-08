@@ -16,6 +16,7 @@ import Camou from "./assets/pants/camouflag.png";
 import CamouSm from "./assets/pants/camousm.png";
 import Cargo from "./assets/pants/cargo.png";
 import Casual from "./assets/pants/casual.png";
+import Black from "./assets/pants/black.png";
 
 export type Pant = {
   image: string;
@@ -52,6 +53,9 @@ export const PantsData: Pant[] = [
   {
     image: Casual,
   },
+  {
+    image: Black,
+  },
 ];
 
 export const PantsAvatar: Pant[] = [
@@ -75,6 +79,9 @@ export const PantsAvatar: Pant[] = [
   },
   {
     image: SkinySm,
+  },
+  {
+    image: CamouSm,
   },
   {
     image: CamouSm,

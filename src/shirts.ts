@@ -7,6 +7,7 @@ import GymSm from "./assets/shirts/gymsm.png";
 import Hoodie from "./assets/shirts/hoodie.png";
 import HoodieSm from "./assets/shirts/hoodiesm.png";
 import Jacket from "./assets/shirts/jacket.png";
+import JacketSm from "./assets/shirts/jacketsm.png";
 import JeanJacket from "./assets/shirts/jean_jacket.png";
 import JeanJacketSm from "./assets/shirts/jean_jacketsm.png";
 import PJ from "./assets/shirts/pj.png";
@@ -38,9 +39,9 @@ export const ShirtsData: Shirt[] = [
   {
     image: Hoodie,
   },
-  // {
-  //   image: Jacket,
-  // },
+  {
+    image: Jacket,
+  },
   {
     image: JeanJacket,
   },
@@ -77,9 +78,9 @@ export const ShirtsAvatar: Shirt[] = [
   {
     image: HoodieSm,
   },
-  // {
-  //   image: Jacket,
-  // },
+  {
+    image: JacketSm,
+  },
   {
     image: JeanJacketSm,
   },
