@@ -38,7 +38,7 @@
 @media screen and (max-width: 960px) {
   .footer {
     flex-direction: column;
-    margin-top: -20px;
+    margin-top: 0;
 
     .coolshit {
       order: 1;
@@ -70,10 +70,15 @@
     }
     .copyright {
       order: 3;
-      margin-bottom: 20px;
       p {
         font-size: 0.8125rem;
         color: #b8b8b8;
+        &:first-child {
+          margin-top: 20px;
+        }
+        &:last-child {
+          margin-bottom: 30px;
+        }
       }
     }
   }

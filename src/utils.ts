@@ -1,3 +1,14 @@
+import Maverick from "./svg/maverick.png";
+import Jason from "./svg/jason.png";
+import Lex from "./svg/Lex.png";
+import Anthea from "./svg/anthea.png";
+import Jerry from "./svg/jerry.png";
+import Zeya from "./svg/Zeya.png";
+import Maddison from "./svg/Maddison.png";
+import Jay from "./svg/Jay.png";
+import Mike from "./svg/Mike.png";
+import GothAngel from "./svg/goth-angel.png";
+
 export type NavbarType = {
   active: string;
 };
@@ -12,51 +23,51 @@ export const data: TeamMemberType[] = [
   {
     name: "Maverick",
     role: "Co-Founder",
-    image: "https://arweave.net/t0VXftYjyMpZZHMcUejdgTx1wELxbpXlp4itN85XUjc",
+    image: Maverick,
   },
   {
     name: "Jason",
     role: "Co-Founder",
-    image: "https://arweave.net/bhk8KfHuaYIm_B4mYKyYcaWQgJqOWNYXMD_INvtl1iw",
+    image: Jason,
   },
   {
     name: "Goth Angel",
     role: "Lead Artist",
-    image: "https://arweave.net/tJswnoAOi0s8w-p2GoicoHkHJvz5jB5Sp7vJAJrjXpE",
+    image: GothAngel,
   },
   {
     name: "LEX",
     role: "Lead Dev",
-    image: "https://arweave.net/t0VXftYjyMpZZHMcUejdgTx1wELxbpXlp4itN85XUjc",
+    image: Lex,
   },
   {
     name: "Jamal",
     role: "Artist",
-    image: "https://arweave.net/Ub0hWTvbJirJ2Rrew_1TnSp8WxwMqRMWrUdd4TiYW6E",
+    image: Anthea,
   },
   {
     name: "Zeya",
     role: "Community Lead",
-    image: "https://arweave.net/xHDUXAf6Al-J-zqAyZnq8igSZH5Rr-Q02gLrI59dauc",
+    image: Zeya,
   },
   {
     name: "Michael",
     role: "Communications",
-    image: "https://arweave.net/05NGY4sMu2pItuqf94a2RPnJcoTnlKyFQYQzyb0ineA",
+    image: Mike,
   },
   {
     name: "Jerry",
     role: "Web3 Dev",
-    image: "https://arweave.net/tJswnoAOi0s8w-p2GoicoHkHJvz5jB5Sp7vJAJrjXpE",
+    image: Jerry,
   },
   {
-    name: "Cactuz",
+    name: "Maddison",
     role: "Community manager",
-    image: "https://arweave.net/bhk8KfHuaYIm_B4mYKyYcaWQgJqOWNYXMD_INvtl1iw",
+    image: Maddison,
   },
   {
-    name: "JayB",
+    name: "Jay",
     role: "Concept Artist",
-    image: "https://arweave.net/IeyCYo1jyTKmfFp6To4g59e0KqqcLwi4QRNQba2T3oA",
+    image: Jay,
   },
 ];

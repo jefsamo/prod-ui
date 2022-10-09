@@ -49,7 +49,7 @@ const Navbar: FC<NavbarType> = ({ active }) => {
             </li>
             <li className="clickable">
               <a
-                href="https://discord.gg/tCF7nwdgfn"
+                href="https://discord.gg/A53A7jNvAT"
                 target="_blank"
                 rel="noreferrer"
               >

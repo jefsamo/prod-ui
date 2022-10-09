@@ -26,7 +26,11 @@ const Home = () => {
                 <video src={Video} autoPlay muted loop className="gif" />
               </div>
               <p>We did it for the art. Want to learn More?</p>
-              <a href="https://rptrdsolsnft.medium.com">
+              <a
+                href="https://rptrdsolsnft.medium.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 F*ck around and find out.
               </a>
             </div>

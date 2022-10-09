@@ -21,6 +21,8 @@ import TeeSm from "./assets/shirts/tee-shirtsm.png";
 import Vintage from "./assets/shirts/vintage.png";
 import VintageSm from "./assets/shirts/vintagesm.png";
 import Goofy from "./assets/shirts/goofy.png";
+import GoofySm from "./assets/shirts/goofysm.png";
+import Varsity from "./assets/shirts/varsity.png";
 
 export type Shirt = {
   image: string;
@@ -63,6 +65,9 @@ export const ShirtsData: Shirt[] = [
   {
     image: Goofy,
   },
+  {
+    image: Varsity,
+  },
 ];
 
 export const ShirtsAvatar: Shirt[] = [
@@ -100,6 +105,9 @@ export const ShirtsAvatar: Shirt[] = [
     image: VintageSm,
   },
   {
-    image: VintageSm,
+    image: GoofySm,
+  },
+  {
+    image: GoofySm,
   },
 ];

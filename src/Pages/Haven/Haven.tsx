@@ -81,7 +81,13 @@ const Haven = () => {
               takes you beyond the real world, to a land of euphoria. We await
               you.
             </p>
-            <a href="https://twitter.com/raptur3dsols">Join Us</a>
+            <a
+              href="https://twitter.com/raptur3dsols"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Join Us
+            </a>
           </div>
         </div>
       </div>

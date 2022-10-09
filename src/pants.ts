@@ -10,13 +10,13 @@ import Short from "./assets/pants/short.png";
 import Shortd from "./assets/pants/shortd.png";
 import Short2 from "./assets/pants/shorts.png";
 import ShortSm from "./assets/pants/shortsm.png";
-import Skiny from "./assets/pants/skiny.png";
+import Skiny from "./assets/pants/black.png";
 import SkinySm from "./assets/pants/skinysm.png";
 import Camou from "./assets/pants/camouflag.png";
 import CamouSm from "./assets/pants/camousm.png";
 import Cargo from "./assets/pants/cargo.png";
+import CargoSm from "./assets/pants/cargosm.png";
 import Casual from "./assets/pants/casual.png";
-import Black from "./assets/pants/black.png";
 
 export type Pant = {
   image: string;
@@ -53,9 +53,6 @@ export const PantsData: Pant[] = [
   {
     image: Casual,
   },
-  {
-    image: Black,
-  },
 ];
 
 export const PantsAvatar: Pant[] = [
@@ -84,10 +81,7 @@ export const PantsAvatar: Pant[] = [
     image: CamouSm,
   },
   {
-    image: CamouSm,
-  },
-  {
-    image: CamouSm,
+    image: CargoSm,
   },
   {
     image: CamouSm,

@@ -3,8 +3,8 @@ import WarmerSm from "./assets/headwear/warmersm.png";
 import Peaky from "./assets/headwear/peaky.png";
 import BucketHat from "./assets/headwear/buckethat.png";
 import BucketHatSm from "./assets/headwear/buckethatsm.png";
-import Cap from "./assets/headwear/cap.png";
-import CapSm from "./assets/headwear/capsm.png";
+// import Cap from "./assets/headwear/cap.png";
+// import CapSm from "./assets/headwear/capsm.png";
 import PeakySm from "./assets/headwear/peakysmall.png";
 
 export type Head = {
@@ -21,9 +21,6 @@ export const HeadData: Head[] = [
   {
     image: Peaky,
   },
-  {
-    image: Cap,
-  },
 ];
 
 export const HeadAvatar: Head[] = [
@@ -35,8 +32,5 @@ export const HeadAvatar: Head[] = [
   },
   {
     image: PeakySm,
-  },
-  {
-    image: CapSm,
   },
 ];
