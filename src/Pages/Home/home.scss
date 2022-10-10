@@ -27,19 +27,19 @@
           width: 90%;
           margin: auto;
           // animation: moveInRight 2s;
-          .content-img {
-            &:hover {
-              cursor: pointer;
-              video {
-                display: block;
-                width: 100%;
-                border-radius: 6px;
-              }
-              img {
-                display: none;
-              }
-            }
-          }
+          // .content-img {
+          //   &:hover {
+          //     cursor: pointer;
+          //     video {
+          //       display: block;
+          //       width: 100%;
+          //       border-radius: 6px;
+          //     }
+          //     img {
+          //       display: none;
+          //     }
+          //   }
+          // }
           video {
             display: none;
           }

@@ -23,7 +23,7 @@ const Home = () => {
             <div className="inner-image">
               <div className="content-img">
                 <img src={Home_Img} alt="" />
-                <video src={Video} autoPlay muted loop className="gif" />
+                {/* <video src={Video} autoPlay muted loop className="gif" /> */}
               </div>
               <p>We did it for the art. Want to learn More?</p>
               <a
@@ -48,7 +48,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
           >
-            F*ck around and find out
+            Stick around and find out
           </a>
           <div className="copy">
             <p>{new Date().getFullYear()}, RPTRD Sols</p>
