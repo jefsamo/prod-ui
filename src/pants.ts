@@ -17,6 +17,7 @@ import CamouSm from "./assets/pants/camousm.png";
 import Cargo from "./assets/pants/cargo.png";
 import CargoSm from "./assets/pants/cargosm.png";
 import Casual from "./assets/pants/casual.png";
+import CasualSm from "./assets/pants/casualsm.png";
 
 export type Pant = {
   image: string;
@@ -84,6 +85,6 @@ export const PantsAvatar: Pant[] = [
     image: CargoSm,
   },
   {
-    image: CamouSm,
+    image: CasualSm,
   },
 ];

@@ -39,8 +39,9 @@ const Footer = () => {
       </div>
       <div className="coolshit">
         <p>
-          We’re Building a project that needs its community, we need you, we
-          fucked around and found out, its your turn to fuck with us.
+          We’re building a project that needs its community.Yes, we need you. We
+          messed around and figured stuff out, now its your turn to fuck with
+          us.
         </p>
       </div>
     </footer>

@@ -23,6 +23,7 @@ import VintageSm from "./assets/shirts/vintagesm.png";
 import Goofy from "./assets/shirts/goofy.png";
 import GoofySm from "./assets/shirts/goofysm.png";
 import Varsity from "./assets/shirts/varsity.png";
+import VarsitySm from "./assets/shirts/varsitysm.png";
 
 export type Shirt = {
   image: string;
@@ -108,6 +109,6 @@ export const ShirtsAvatar: Shirt[] = [
     image: GoofySm,
   },
   {
-    image: GoofySm,
+    image: VarsitySm,
   },
 ];

@@ -14,7 +14,7 @@ const TeamMember: FC<{ member: TeamMemberType }> = ({ member }) => {
             <p className="role">{member.role}</p>
           </div>
           <div className="twitter">
-            <a href="https://twitter.com/maverick6_6_6">
+            <a href={member.handle} target="_blank" rel="noreferrer">
               <img src={Twitter_Yellow} alt="" />
             </a>
           </div>

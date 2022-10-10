@@ -28,10 +28,10 @@ const Haven = () => {
 
           <p>
             An amazing brand created for extraordinary people. <br />
-            <br /> We live in a world defined by good and bad, right and wrong,
-            heaven and hell, success and failure. Amidst it all, we find
-            Rapture. In the center of chaos, Your Haven comes to life. Where
-            there is no torment, only euphoria. Where it is okay to live. <br />
+            <br /> We live in a world defined by good or bad, right or wrong,
+            heaven or hell, success or failure. Amidst it all, we find Rapture.
+            In the center of chaos, Your Haven comes to life. Where there is no
+            torment, only euphoria. Where it is okay to live. <br />
             <br /> A flawless collection of 6,666 souls gives you unquestionable
             access to Your Haven. Along with exclusive merch drops for members
             only, live events, outdoor campaigns, and NFT drops. <br />

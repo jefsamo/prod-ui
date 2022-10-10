@@ -17,6 +17,7 @@ export type TeamMemberType = {
   name: string;
   role: string;
   image: string;
+  handle?: string;
 };
 
 export const data: TeamMemberType[] = [
@@ -24,6 +25,7 @@ export const data: TeamMemberType[] = [
     name: "Maverick",
     role: "Co-Founder",
     image: Maverick,
+    handle: "https://twitter.com/maverick6_6_6",
   },
   {
     name: "Jason",
