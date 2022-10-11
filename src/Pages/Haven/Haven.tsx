@@ -82,7 +82,7 @@ const Haven = () => {
               you.
             </p>
             <a
-              href="https://twitter.com/raptur3dsols"
+              href="https://discord.gg/A53A7jNvAT"
               target="_blank"
               rel="noreferrer"
             >
