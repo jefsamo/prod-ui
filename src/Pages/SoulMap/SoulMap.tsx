@@ -13,13 +13,15 @@ const SoulMap = () => {
             Work In progress, Currently drafting the bullshit utilities <br />
             like, Staking, Plain old merch, and some buzzwords
           </p>
-          <a
-            href="https://rptrdsolsnft.medium.com"
-            target="_blank"
-            rel="noreferrer"
+          <button
+            // href="https://rptrdsolsnft.medium.com"
+            // target="_blank"
+            // rel="noreferrer"
+            className="btn"
           >
-            Our foremost plan
-          </a>
+            <span className="visible">Our foremost plan</span>
+            <span className="invisible">Coming soon</span>
+          </button>
           <p className="rptrd">
             {new Date().getFullYear()}, RPTRD Souls <br /> Rapture is coming.
           </p>

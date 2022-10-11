@@ -31,7 +31,7 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                F*ck around and find out.
+                Stick around and find out.
               </a>
             </div>
           </div>

@@ -11,7 +11,23 @@
     .left-content {
       margin: 50px 0;
       position: relative;
-      a {
+      // a {
+      //   text-decoration: none;
+      //   font-family: "DM Sans";
+      //   font-style: normal;
+      //   font-weight: 500;
+      //   border: 1px solid #23272a;
+      //   color: #23272a;
+      //   border-radius: 20px;
+      //   padding: 12px 24px;
+      //   transition: all 0.3s ease 0s;
+
+      //   &:hover {
+      //     color: #fff;
+      //     background: #23272a;
+      //   }
+      // }
+      button {
         text-decoration: none;
         font-family: "DM Sans";
         font-style: normal;
@@ -21,10 +37,37 @@
         border-radius: 20px;
         padding: 12px 24px;
         transition: all 0.3s ease 0s;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        text-align: center;
+
+        .visible {
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+        }
+        .invisible {
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: -100%;
+          height: 100%;
+          width: 100%;
+          transition: all 0.2s;
+        }
 
         &:hover {
           color: #fff;
           background: #23272a;
+          cursor: pointer;
+          .invisible {
+            top: 30%;
+          }
+          .visible {
+            transform: translateY(200%);
+          }
         }
       }
       h1 {
