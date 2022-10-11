@@ -58,8 +58,8 @@ export const data: TeamMemberType[] = [
     image: Mike,
   },
   {
-    name: "Jerry",
-    role: "Web3 Dev",
+    name: "Jay",
+    role: "Fashion Designer",
     image: Jerry,
   },
   {
@@ -68,8 +68,8 @@ export const data: TeamMemberType[] = [
     image: Maddison,
   },
   {
-    name: "Jay",
-    role: "Concept Artist",
+    name: "Jerry",
+    role: "Web3 Dev",
     image: Jay,
   },
 ];
