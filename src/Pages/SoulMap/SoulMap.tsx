@@ -11,7 +11,7 @@ const SoulMap = () => {
           <h1>Soul map</h1>
           <p>
             Work In progress, Currently drafting the bullshit utilities <br />
-            like, Staking, Plain old merch, and some buzzwords
+            like, Staking, Plain cool merch, and some buzzwords.
           </p>
           <button
             // href="https://rptrdsolsnft.medium.com"
