@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import { Link } from "react-router-dom";
-import { NavbarType } from "../../utils";
+import { NavbarType } from "utils";
 import Logo from "./svg/logo2.png";
 import Union from "./svg/Union.png";
 import Times from "./svg/Vector.png";

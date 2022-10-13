@@ -1,4 +1,3 @@
-import React from "react";
 import AttributeCard from "../AttributesCard/AttributeCard";
 import "./ranking.scss";
 import Img from "./svg/img.png";

@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "components/Navbar/Navbar";
 import Haven from "./svg/haven-map.jpg";
 import "./soulMap.scss";
 

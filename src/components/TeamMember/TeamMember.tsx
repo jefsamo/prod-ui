@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { TeamMemberType } from "../../utils";
+import { TeamMemberType } from "utils";
 import Twitter_Yellow from "./svg/twitter_yellow.png";
 import "./teamMember.scss";
 

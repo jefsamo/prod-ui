@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Attributes from "../../components/Attributes/Attributes";
-import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Navbar/Navbar";
-import Ranking from "../../components/Ranking/Ranking";
+import Attributes from "components/Attributes/Attributes";
+import Footer from "components/Footer/Footer";
+import Navbar from "components/Navbar/Navbar";
+import Ranking from "components/Ranking/Ranking";
 import "./souls.scss";
 
 const Souls = () => {

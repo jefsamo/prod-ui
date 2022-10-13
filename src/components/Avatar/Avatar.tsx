@@ -1,7 +1,7 @@
-import { Kick } from "../../kicks";
-import { Shirt } from "../../shirts";
-import { Pant } from "../../pants";
-import { Head } from "../../headwear";
+import { Kick } from "kicks";
+import { Shirt } from "shirts";
+import { Pant } from "pants";
+import { Head } from "headwear";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "./avatar.scss";
