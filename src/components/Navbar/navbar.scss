@@ -76,6 +76,16 @@
       color: #23272a;
     }
   }
+  .n-clickable {
+    background: #e7e7e7;
+    opacity: 0.45;
+    cursor: not-allowed !important;
+    a {
+      &:hover {
+        cursor: not-allowed !important;
+      }
+    }
+  }
   img {
     display: block;
   }

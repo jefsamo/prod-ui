@@ -32,8 +32,10 @@ const Navbar: FC<NavbarType> = ({ active }) => {
             <li className={active === "soul-map" ? "active tab" : "clickable"}>
               <Link to="/soul-map">Soul map</Link>
             </li>
-            <li className={active === "whitelist" ? "active tab" : "clickable"}>
-              <Link to="/whitelist">Apply for WL</Link>
+            <li
+              className={active === "whitelist" ? "active tab" : "n-clickable"}
+            >
+              <Link to="">Apply for WL</Link>
             </li>
             {/* <li className="inactive">
               <Link to="/wallet-checker">Wallet Checker</Link>
