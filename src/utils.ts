@@ -33,11 +33,6 @@ export const data: TeamMemberType[] = [
     image: Jason,
   },
   {
-    name: "Goth Angel",
-    role: "Lead Artist",
-    image: GothAngel,
-  },
-  {
     name: "LEX",
     role: "Lead Dev",
     image: Lex,
@@ -58,18 +53,23 @@ export const data: TeamMemberType[] = [
     image: Mike,
   },
   {
-    name: "Jay",
+    name: "Rocket Man",
     role: "Fashion Designer",
+    image: GothAngel,
+  },
+  {
+    name: "Jerry",
+    role: "Web3 Dev",
     image: Jerry,
+  },
+  {
+    name: "Jay",
+    role: "Artist",
+    image: Jay,
   },
   {
     name: "Maddison",
     role: "Community manager",
     image: Maddison,
-  },
-  {
-    name: "Jerry",
-    role: "Web3 Dev",
-    image: Jay,
   },
 ];
