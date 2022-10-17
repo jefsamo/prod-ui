@@ -53,7 +53,7 @@ export const data: TeamMemberType[] = [
     image: Zeya,
   },
   {
-    name: "Michael",
+    name: "WhiteLion",
     role: "Communications",
     image: Mike,
   },
